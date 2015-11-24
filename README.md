@@ -1,7 +1,7 @@
 Fire Up Your VPN
 -------
 
-> ## 在通知中心一键启用 VPN。
+## 在通知中心一键启用 VPN。
 
 ### 基础要求：
 
@@ -12,12 +12,15 @@ Fire Up Your VPN
 ### 使用展示
 
 下拉：
+
 ![screenshot-1](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-1.jpg)
 
 点击连接：
+
 ![screenshot-2](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-2.jpg)
 
 连接成功：
+
 ![screenshot-3](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-3.jpg)
 
 ### 关键特性
