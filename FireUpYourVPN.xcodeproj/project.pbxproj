@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8F43B6F1C04B08A006C62BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B6E1C04B08A006C62BB /* AppDelegate.swift */; };
+		C8F43B711C04B08A006C62BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B701C04B08A006C62BB /* ViewController.swift */; };
+		C8F43B741C04B08A006C62BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F43B721C04B08A006C62BB /* Main.storyboard */; };
+		C8F43B761C04B08A006C62BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F43B751C04B08A006C62BB /* Assets.xcassets */; };
+		C8F43B791C04B08A006C62BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F43B771C04B08A006C62BB /* LaunchScreen.storyboard */; };
+		C8F43B841C04B08A006C62BB /* FireUpYourVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B831C04B08A006C62BB /* FireUpYourVPNTests.swift */; };
+		C8F43B8F1C04B08A006C62BB /* FireUpYourVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B8E1C04B08A006C62BB /* FireUpYourVPNUITests.swift */; };
+		C8F43BA31C04B0A5006C62BB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F43BA21C04B0A5006C62BB /* NotificationCenter.framework */; };
+		C8F43BA61C04B0A5006C62BB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43BA51C04B0A5006C62BB /* TodayViewController.swift */; };
+		C8F43BA91C04B0A5006C62BB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F43BA71C04B0A5006C62BB /* MainInterface.storyboard */; };
+		C8F43BAD1C04B0A5006C62BB /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C8F43BA01C04B0A5006C62BB /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C8F43BB31C04B117006C62BB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43BB21C04B117006C62BB /* Keychain.swift */; };
+		C8F43BB41C04B117006C62BB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43BB21C04B117006C62BB /* Keychain.swift */; };
+		C8F43BB61C04B2E3006C62BB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F43BB51C04B2E3006C62BB /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8F43B801C04B08A006C62BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F43B631C04B08A006C62BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F43B6A1C04B08A006C62BB;
+			remoteInfo = FireUpYourVPN;
+		};
+		C8F43B8B1C04B08A006C62BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F43B631C04B08A006C62BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F43B6A1C04B08A006C62BB;
+			remoteInfo = FireUpYourVPN;
+		};
+		C8F43BAB1C04B0A5006C62BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F43B631C04B08A006C62BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F43B9F1C04B0A5006C62BB;
+			remoteInfo = Today;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8F43BB11C04B0A5006C62BB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C8F43BAD1C04B0A5006C62BB /* Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C8F43B6B1C04B08A006C62BB /* FireUpYourVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireUpYourVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F43B6E1C04B08A006C62BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8F43B701C04B08A006C62BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8F43B731C04B08A006C62BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8F43B751C04B08A006C62BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8F43B781C04B08A006C62BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8F43B7A1C04B08A006C62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F43B7F1C04B08A006C62BB /* FireUpYourVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireUpYourVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F43B831C04B08A006C62BB /* FireUpYourVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireUpYourVPNTests.swift; sourceTree = "<group>"; };
+		C8F43B851C04B08A006C62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F43B8A1C04B08A006C62BB /* FireUpYourVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireUpYourVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F43B8E1C04B08A006C62BB /* FireUpYourVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireUpYourVPNUITests.swift; sourceTree = "<group>"; };
+		C8F43B901C04B08A006C62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F43BA01C04B0A5006C62BB /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F43BA21C04B0A5006C62BB /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C8F43BA51C04B0A5006C62BB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C8F43BA81C04B0A5006C62BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C8F43BAA1C04B0A5006C62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F43BB21C04B117006C62BB /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Dependences/Keychain.swift; sourceTree = "<group>"; };
+		C8F43BB51C04B2E3006C62BB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		C8F43BB71C04B2E3006C62BB /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Today.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8F43B681C04B08A006C62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B7C1C04B08A006C62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B871C04B08A006C62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B9D1C04B0A5006C62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43BA31C04B0A5006C62BB /* NotificationCenter.framework in Frameworks */,
+				C8F43BB61C04B2E3006C62BB /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8F43B621C04B08A006C62BB = {
+			isa = PBXGroup;
+			children = (
+				C8F43BB21C04B117006C62BB /* Keychain.swift */,
+				C8F43B6D1C04B08A006C62BB /* FireUpYourVPN */,
+				C8F43B821C04B08A006C62BB /* FireUpYourVPNTests */,
+				C8F43B8D1C04B08A006C62BB /* FireUpYourVPNUITests */,
+				C8F43BA41C04B0A5006C62BB /* Today */,
+				C8F43BA11C04B0A5006C62BB /* Frameworks */,
+				C8F43B6C1C04B08A006C62BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8F43B6C1C04B08A006C62BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43B6B1C04B08A006C62BB /* FireUpYourVPN.app */,
+				C8F43B7F1C04B08A006C62BB /* FireUpYourVPNTests.xctest */,
+				C8F43B8A1C04B08A006C62BB /* FireUpYourVPNUITests.xctest */,
+				C8F43BA01C04B0A5006C62BB /* Today.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8F43B6D1C04B08A006C62BB /* FireUpYourVPN */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43B6E1C04B08A006C62BB /* AppDelegate.swift */,
+				C8F43B701C04B08A006C62BB /* ViewController.swift */,
+				C8F43B721C04B08A006C62BB /* Main.storyboard */,
+				C8F43B751C04B08A006C62BB /* Assets.xcassets */,
+				C8F43B771C04B08A006C62BB /* LaunchScreen.storyboard */,
+				C8F43B7A1C04B08A006C62BB /* Info.plist */,
+			);
+			path = FireUpYourVPN;
+			sourceTree = "<group>";
+		};
+		C8F43B821C04B08A006C62BB /* FireUpYourVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43B831C04B08A006C62BB /* FireUpYourVPNTests.swift */,
+				C8F43B851C04B08A006C62BB /* Info.plist */,
+			);
+			path = FireUpYourVPNTests;
+			sourceTree = "<group>";
+		};
+		C8F43B8D1C04B08A006C62BB /* FireUpYourVPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43B8E1C04B08A006C62BB /* FireUpYourVPNUITests.swift */,
+				C8F43B901C04B08A006C62BB /* Info.plist */,
+			);
+			path = FireUpYourVPNUITests;
+			sourceTree = "<group>";
+		};
+		C8F43BA11C04B0A5006C62BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43BB51C04B2E3006C62BB /* NetworkExtension.framework */,
+				C8F43BA21C04B0A5006C62BB /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8F43BA41C04B0A5006C62BB /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				C8F43BB71C04B2E3006C62BB /* Today.entitlements */,
+				C8F43BA51C04B0A5006C62BB /* TodayViewController.swift */,
+				C8F43BA71C04B0A5006C62BB /* MainInterface.storyboard */,
+				C8F43BAA1C04B0A5006C62BB /* Info.plist */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8F43B6A1C04B08A006C62BB /* FireUpYourVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F43B931C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPN" */;
+			buildPhases = (
+				C8F43B671C04B08A006C62BB /* Sources */,
+				C8F43B681C04B08A006C62BB /* Frameworks */,
+				C8F43B691C04B08A006C62BB /* Resources */,
+				C8F43BB11C04B0A5006C62BB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F43BAC1C04B0A5006C62BB /* PBXTargetDependency */,
+			);
+			name = FireUpYourVPN;
+			productName = FireUpYourVPN;
+			productReference = C8F43B6B1C04B08A006C62BB /* FireUpYourVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8F43B7E1C04B08A006C62BB /* FireUpYourVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F43B961C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPNTests" */;
+			buildPhases = (
+				C8F43B7B1C04B08A006C62BB /* Sources */,
+				C8F43B7C1C04B08A006C62BB /* Frameworks */,
+				C8F43B7D1C04B08A006C62BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F43B811C04B08A006C62BB /* PBXTargetDependency */,
+			);
+			name = FireUpYourVPNTests;
+			productName = FireUpYourVPNTests;
+			productReference = C8F43B7F1C04B08A006C62BB /* FireUpYourVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8F43B891C04B08A006C62BB /* FireUpYourVPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F43B991C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPNUITests" */;
+			buildPhases = (
+				C8F43B861C04B08A006C62BB /* Sources */,
+				C8F43B871C04B08A006C62BB /* Frameworks */,
+				C8F43B881C04B08A006C62BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F43B8C1C04B08A006C62BB /* PBXTargetDependency */,
+			);
+			name = FireUpYourVPNUITests;
+			productName = FireUpYourVPNUITests;
+			productReference = C8F43B8A1C04B08A006C62BB /* FireUpYourVPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C8F43B9F1C04B0A5006C62BB /* Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F43BAE1C04B0A5006C62BB /* Build configuration list for PBXNativeTarget "Today" */;
+			buildPhases = (
+				C8F43B9C1C04B0A5006C62BB /* Sources */,
+				C8F43B9D1C04B0A5006C62BB /* Frameworks */,
+				C8F43B9E1C04B0A5006C62BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Today;
+			productName = Today;
+			productReference = C8F43BA01C04B0A5006C62BB /* Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8F43B631C04B08A006C62BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = JohnLui;
+				TargetAttributes = {
+					C8F43B6A1C04B08A006C62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = B7PY5JUP9A;
+					};
+					C8F43B7E1C04B08A006C62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C8F43B6A1C04B08A006C62BB;
+					};
+					C8F43B891C04B08A006C62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C8F43B6A1C04B08A006C62BB;
+					};
+					C8F43B9F1C04B0A5006C62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = B7PY5JUP9A;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C8F43B661C04B08A006C62BB /* Build configuration list for PBXProject "FireUpYourVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8F43B621C04B08A006C62BB;
+			productRefGroup = C8F43B6C1C04B08A006C62BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8F43B6A1C04B08A006C62BB /* FireUpYourVPN */,
+				C8F43B7E1C04B08A006C62BB /* FireUpYourVPNTests */,
+				C8F43B891C04B08A006C62BB /* FireUpYourVPNUITests */,
+				C8F43B9F1C04B0A5006C62BB /* Today */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8F43B691C04B08A006C62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43B791C04B08A006C62BB /* LaunchScreen.storyboard in Resources */,
+				C8F43B761C04B08A006C62BB /* Assets.xcassets in Resources */,
+				C8F43B741C04B08A006C62BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B7D1C04B08A006C62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B881C04B08A006C62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B9E1C04B0A5006C62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43BA91C04B0A5006C62BB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8F43B671C04B08A006C62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43B711C04B08A006C62BB /* ViewController.swift in Sources */,
+				C8F43B6F1C04B08A006C62BB /* AppDelegate.swift in Sources */,
+				C8F43BB31C04B117006C62BB /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B7B1C04B08A006C62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43B841C04B08A006C62BB /* FireUpYourVPNTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B861C04B08A006C62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43B8F1C04B08A006C62BB /* FireUpYourVPNUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F43B9C1C04B0A5006C62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F43BA61C04B0A5006C62BB /* TodayViewController.swift in Sources */,
+				C8F43BB41C04B117006C62BB /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8F43B811C04B08A006C62BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8F43B6A1C04B08A006C62BB /* FireUpYourVPN */;
+			targetProxy = C8F43B801C04B08A006C62BB /* PBXContainerItemProxy */;
+		};
+		C8F43B8C1C04B08A006C62BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8F43B6A1C04B08A006C62BB /* FireUpYourVPN */;
+			targetProxy = C8F43B8B1C04B08A006C62BB /* PBXContainerItemProxy */;
+		};
+		C8F43BAC1C04B0A5006C62BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8F43B9F1C04B0A5006C62BB /* Today */;
+			targetProxy = C8F43BAB1C04B0A5006C62BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8F43B721C04B08A006C62BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8F43B731C04B08A006C62BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8F43B771C04B08A006C62BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8F43B781C04B08A006C62BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C8F43BA71C04B0A5006C62BB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8F43BA81C04B0A5006C62BB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8F43B911C04B08A006C62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8F43B921C04B08A006C62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8F43B941C04B08A006C62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FireUpYourVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8F43B951C04B08A006C62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FireUpYourVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C8F43B971C04B08A006C62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FireUpYourVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireUpYourVPN.app/FireUpYourVPN";
+			};
+			name = Debug;
+		};
+		C8F43B981C04B08A006C62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FireUpYourVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireUpYourVPN.app/FireUpYourVPN";
+			};
+			name = Release;
+		};
+		C8F43B9A1C04B08A006C62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FireUpYourVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FireUpYourVPN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C8F43B9B1C04B08A006C62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FireUpYourVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FireUpYourVPN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		C8F43BAF1C04B0A5006C62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPN.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C8F43BB01C04B0A5006C62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPN.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8F43B661C04B08A006C62BB /* Build configuration list for PBXProject "FireUpYourVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F43B911C04B08A006C62BB /* Debug */,
+				C8F43B921C04B08A006C62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F43B931C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F43B941C04B08A006C62BB /* Debug */,
+				C8F43B951C04B08A006C62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8F43B961C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F43B971C04B08A006C62BB /* Debug */,
+				C8F43B981C04B08A006C62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8F43B991C04B08A006C62BB /* Build configuration list for PBXNativeTarget "FireUpYourVPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F43B9A1C04B08A006C62BB /* Debug */,
+				C8F43B9B1C04B08A006C62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8F43BAE1C04B0A5006C62BB /* Build configuration list for PBXNativeTarget "Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F43BAF1C04B0A5006C62BB /* Debug */,
+				C8F43BB01C04B0A5006C62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8F43B631C04B08A006C62BB /* Project object */;
+}
