@@ -1,7 +1,7 @@
 Fire Up Your VPN
 -------
 
-在通知中心一键启用 VPN。
+> ## 在通知中心一键启用 VPN。
 
 ### 基础要求：
 
@@ -11,11 +11,24 @@ Fire Up Your VPN
 
 ### 使用展示
 
+下拉：
 ![screenshot-1](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-1.jpg)
 
+点击连接：
 ![screenshot-2](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-2.jpg)
 
+连接成功：
 ![screenshot-3](https://raw.githubusercontent.com/johnlui/FireUpYourVPN/master/images/screenshot-3.jpg)
+
+### 关键特性
+
+alpha 1.0，暂时只支持 CISCO IPSec。
+
+修改配置，TodayViewController 中：
+
+```swift
+self.vpnConfig = VPNConfig(server: "www.ooxx.com", username: "user", password: "pass", groupName: "vpn", sharedSecret: "vpn.psk")
+```
 
 ### 关键设置
 
