@@ -25,10 +25,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var juhuaView: UIActivityIndicatorView!
     @IBOutlet weak var `switch`: UISwitch!
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.vpnConfig = VPNConfig(server: "www.ooxx.com", username: "user", password: "pass", groupName: "vpn", sharedSecret: "vpn.psk")
+        self.label.text = Common.sharedUserDefaults?.stringForKey("s")
+        
+//        self.vpnConfig = VPNConfig(server: "www.ooxx.com", username: "user", password: "pass", groupName: "vpn", sharedSecret: "vpn.psk")
+        self.vpnConfig = VPNConfig(server: "ipsec05.blockcn.net", username: "tizi", password: "motherfucker", groupName: "vpn", sharedSecret: "vpn.psk")
         
         self.manager = NEVPNManager.sharedManager()
         self.manager.loadFromPreferencesWithCompletionHandler { (error) -> Void in
