@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C87AC34C1C08BB45003842CF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87AC34B1C08BB45003842CF /* Common.swift */; };
 		C87AC34D1C08BBAC003842CF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87AC34B1C08BB45003842CF /* Common.swift */; };
+		C8839EF41C094B300092F4A1 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8839EF31C094B300092F4A1 /* CALayer.swift */; };
+		C8839EF51C094B300092F4A1 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8839EF31C094B300092F4A1 /* CALayer.swift */; };
+		C8A217611C0AF22D0096459C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A217601C0AF22D0096459C /* UIButton.swift */; };
+		C8A217631C0AF3E20096459C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A217621C0AF3E20096459C /* UITextField.swift */; };
+		C8A217651C0AF71D0096459C /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A217641C0AF71D0096459C /* SwiftNotice.swift */; };
 		C8F43B6F1C04B08A006C62BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B6E1C04B08A006C62BB /* AppDelegate.swift */; };
 		C8F43B711C04B08A006C62BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F43B701C04B08A006C62BB /* ViewController.swift */; };
 		C8F43B741C04B08A006C62BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F43B721C04B08A006C62BB /* Main.storyboard */; };
@@ -65,6 +70,10 @@
 
 /* Begin PBXFileReference section */
 		C87AC34B1C08BB45003842CF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		C8839EF31C094B300092F4A1 /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		C8A217601C0AF22D0096459C /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		C8A217621C0AF3E20096459C /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		C8A217641C0AF71D0096459C /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNotice.swift; path = Dependences/SwiftNotice.swift; sourceTree = "<group>"; };
 		C8F43B6B1C04B08A006C62BB /* FireUpYourVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireUpYourVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F43B6E1C04B08A006C62BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8F43B701C04B08A006C62BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,11 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8A2175C1C0AF16F0096459C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8A217601C0AF22D0096459C /* UIButton.swift */,
+				C8A217621C0AF3E20096459C /* UITextField.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		C8F43B621C04B08A006C62BB = {
 			isa = PBXGroup;
 			children = (
+				C8839EF31C094B300092F4A1 /* CALayer.swift */,
 				C87AC34B1C08BB45003842CF /* Common.swift */,
 				C8F43BB21C04B117006C62BB /* Keychain.swift */,
+				C8A217641C0AF71D0096459C /* SwiftNotice.swift */,
+				C8A2175C1C0AF16F0096459C /* Extensions */,
 				C8F43B6D1C04B08A006C62BB /* FireUpYourVPN */,
 				C8F43B821C04B08A006C62BB /* FireUpYourVPNTests */,
 				C8F43B8D1C04B08A006C62BB /* FireUpYourVPNUITests */,
@@ -379,8 +400,12 @@
 			files = (
 				C87AC34C1C08BB45003842CF /* Common.swift in Sources */,
 				C8F43B711C04B08A006C62BB /* ViewController.swift in Sources */,
+				C8A217631C0AF3E20096459C /* UITextField.swift in Sources */,
+				C8A217651C0AF71D0096459C /* SwiftNotice.swift in Sources */,
 				C8F43B6F1C04B08A006C62BB /* AppDelegate.swift in Sources */,
 				C8F43BB31C04B117006C62BB /* Keychain.swift in Sources */,
+				C8839EF41C094B300092F4A1 /* CALayer.swift in Sources */,
+				C8A217611C0AF22D0096459C /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C87AC34D1C08BBAC003842CF /* Common.swift in Sources */,
+				C8839EF51C094B300092F4A1 /* CALayer.swift in Sources */,
 				C8F43BA61C04B0A5006C62BB /* TodayViewController.swift in Sources */,
 				C8F43BB41C04B117006C62BB /* Keychain.swift in Sources */,
 			);

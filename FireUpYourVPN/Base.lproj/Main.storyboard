@@ -17,102 +17,163 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-g2-XvJ" userLabel="banner">
-                                <rect key="frame" x="193" y="30.5" width="214.5" height="60.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="在通知栏一键启动 VPN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tz3-Lz-EHk">
-                                        <rect key="frame" x="20" y="20" width="174.5" height="20.5"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Aec-Lh-QgD"/>
-                                    <constraint firstAttribute="width" constant="214" id="YAx-CW-yT2"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-a3-leC" userLabel="server">
-                                <rect key="frame" x="0.0" y="120" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-a3-leC" userLabel="server">
+                                <rect key="frame" x="0.0" y="60" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="服务器地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-HW-esK">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="TgY-7y-Dy9"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="xV3-2h-RP0"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MFr-hM-Qzj"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rw9-Rz-9fI" userLabel="username">
-                                <rect key="frame" x="0.0" y="172" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw9-Rz-9fI" userLabel="username">
+                                <rect key="frame" x="0.0" y="112" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b3B-Tc-tiW">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="q6R-5S-0K0"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="KVq-iS-H8D"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7mA-F0-gjU"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-8J-teh" userLabel="password">
-                                <rect key="frame" x="0.0" y="224" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-8J-teh" userLabel="password">
+                                <rect key="frame" x="0.0" y="164" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6eG-mN-WuM">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="W91-FV-pgS"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="haz-8f-1ab"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8Qj-VR-Ald"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90b-tM-UBr" userLabel="group">
-                                <rect key="frame" x="0.0" y="276" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90b-tM-UBr" userLabel="group">
+                                <rect key="frame" x="0.0" y="216" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="群组名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-6q-WHr">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="YpF-Xx-mxZ"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="uFA-E7-cgo"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6YR-e0-EKh"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-U0-Vnf" userLabel="psk">
-                                <rect key="frame" x="0.0" y="328" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-U0-Vnf" userLabel="psk">
+                                <rect key="frame" x="0.0" y="268" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密钥（PSK）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-4R-b9S">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="b1M-8w-PLC"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="UTs-o9-blV"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="T21-Zg-nFK"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-dk-ey7">
+                                <rect key="frame" x="40" y="500" width="520" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EQt-Yv-cZP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <state key="normal" title="保存 VPN 配置">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mainButtonBeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVS-Sw-gD2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bcy-g2-XvJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="RPg-gg-8C0"/>
-                            <constraint firstItem="bcy-g2-XvJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWY-Wu-zup"/>
+                            <constraint firstAttribute="trailing" secondItem="rw9-Rz-9fI" secondAttribute="trailing" id="1FQ-jJ-W2S"/>
+                            <constraint firstItem="e7n-U0-Vnf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3VO-7t-fPr"/>
+                            <constraint firstItem="7nN-dk-ey7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="9Zw-6J-4i0"/>
+                            <constraint firstItem="mrh-a3-leC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="A8n-27-of0"/>
+                            <constraint firstAttribute="trailing" secondItem="90b-tM-UBr" secondAttribute="trailing" id="FzR-r8-Kh8"/>
+                            <constraint firstItem="U6j-8J-teh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HJ5-uu-NJp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nN-dk-ey7" secondAttribute="bottom" constant="20" id="IbM-4Y-Z5j"/>
+                            <constraint firstAttribute="trailing" secondItem="U6j-8J-teh" secondAttribute="trailing" id="LKT-2q-eOU"/>
+                            <constraint firstAttribute="trailing" secondItem="7nN-dk-ey7" secondAttribute="trailing" constant="40" id="Lsq-Cn-kfD"/>
+                            <constraint firstAttribute="trailing" secondItem="mrh-a3-leC" secondAttribute="trailing" id="PHw-Os-wxM"/>
+                            <constraint firstItem="mrh-a3-leC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QlG-oN-faG"/>
+                            <constraint firstItem="rw9-Rz-9fI" firstAttribute="top" secondItem="mrh-a3-leC" secondAttribute="bottom" constant="8" id="aAn-9m-b5W"/>
+                            <constraint firstItem="e7n-U0-Vnf" firstAttribute="top" secondItem="90b-tM-UBr" secondAttribute="bottom" constant="8" id="bA5-qz-wit"/>
+                            <constraint firstItem="90b-tM-UBr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="era-wy-Unt"/>
+                            <constraint firstAttribute="trailing" secondItem="e7n-U0-Vnf" secondAttribute="trailing" id="nbo-DO-ABa"/>
+                            <constraint firstItem="U6j-8J-teh" firstAttribute="top" secondItem="rw9-Rz-9fI" secondAttribute="bottom" constant="8" id="udM-yg-zEw"/>
+                            <constraint firstItem="rw9-Rz-9fI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xM9-PG-Mpt"/>
+                            <constraint firstItem="90b-tM-UBr" firstAttribute="top" secondItem="U6j-8J-teh" secondAttribute="bottom" constant="8" id="xUf-LC-jxB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainButton" destination="7nN-dk-ey7" id="iwN-MN-trU"/>
+                        <outletCollection property="textFieldArray" destination="xTs-HW-esK" collectionClass="NSMutableArray" id="9SH-ay-dzn"/>
+                        <outletCollection property="textFieldArray" destination="b3B-Tc-tiW" collectionClass="NSMutableArray" id="G4d-9X-uwA"/>
+                        <outletCollection property="textFieldArray" destination="6eG-mN-WuM" collectionClass="NSMutableArray" id="xbe-LT-VDw"/>
+                        <outletCollection property="textFieldArray" destination="y8E-6q-WHr" collectionClass="NSMutableArray" id="xV5-2O-lSi"/>
+                        <outletCollection property="textFieldArray" destination="gpr-4R-b9S" collectionClass="NSMutableArray" id="vG2-ef-WfK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
