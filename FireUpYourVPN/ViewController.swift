@@ -14,10 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        Common.sharedUserDefaults?.setObject("OOXX", forKey: "s")
+        
         self.mainButton.disable()
         self.textFieldArray.first?.becomeFirstResponder()
+        
+        if let configs = Common.sharedUserDefaults?.arrayForKey("configsArray") {
+            for (i, j) in self.textFieldArray.enumerate() {
+                j.text = configs[i].description
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +56,7 @@ class ViewController: UIViewController {
         }
         if valuesArray.count == 5 {
             Common.sharedUserDefaults?.setValue(valuesArray, forKey: "configsArray")
+            Common.sharedUserDefaults?.setBool(true, forKey: "updated")
             self.noticeSuccess("配置保存成功", autoClear: true, autoClearTime: 3)
         } else {
             self.noticeError("配制保存出错")
