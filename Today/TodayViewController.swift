@@ -29,8 +29,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.vpnConfig = VPNConfig(server: "www.ooxx.com", username: "user", password: "pass", groupName: "vpn", sharedSecret: "vpn.psk")
-//        self.vpnConfig = VPNConfig(server: "ipsec05.blockcn.net", username: "tizi", password: "motherfucker", groupName: "vpn", sharedSecret: "vpn.psk")
         if let configsArray = Common.sharedUserDefaults?.arrayForKey("configsArray") {
             self.vpnConfig = VPNConfig(server: configsArray[0].description, username: configsArray[1].description, password: configsArray[2].description, groupName: configsArray[3].description, sharedSecret: configsArray[4].description)
         } else {
