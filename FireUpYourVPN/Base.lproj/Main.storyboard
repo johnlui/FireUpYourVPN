@@ -142,6 +142,13 @@
                                     <action selector="mainButtonBeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVS-Sw-gD2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支持 CISCO IPSec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFl-xr-Lvi">
+                                <rect key="frame" x="232.5" y="30" width="135.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -157,11 +164,13 @@
                             <constraint firstAttribute="trailing" secondItem="7nN-dk-ey7" secondAttribute="trailing" constant="40" id="Lsq-Cn-kfD"/>
                             <constraint firstAttribute="trailing" secondItem="mrh-a3-leC" secondAttribute="trailing" id="PHw-Os-wxM"/>
                             <constraint firstItem="mrh-a3-leC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QlG-oN-faG"/>
+                            <constraint firstItem="qFl-xr-Lvi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="SdZ-Ui-qpb"/>
                             <constraint firstItem="rw9-Rz-9fI" firstAttribute="top" secondItem="mrh-a3-leC" secondAttribute="bottom" constant="8" id="aAn-9m-b5W"/>
                             <constraint firstItem="e7n-U0-Vnf" firstAttribute="top" secondItem="90b-tM-UBr" secondAttribute="bottom" constant="8" id="bA5-qz-wit"/>
                             <constraint firstItem="90b-tM-UBr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="era-wy-Unt"/>
                             <constraint firstAttribute="trailing" secondItem="e7n-U0-Vnf" secondAttribute="trailing" id="nbo-DO-ABa"/>
                             <constraint firstItem="U6j-8J-teh" firstAttribute="top" secondItem="rw9-Rz-9fI" secondAttribute="bottom" constant="8" id="udM-yg-zEw"/>
+                            <constraint firstItem="qFl-xr-Lvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFf-sQ-Ulz"/>
                             <constraint firstItem="rw9-Rz-9fI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xM9-PG-Mpt"/>
                             <constraint firstItem="90b-tM-UBr" firstAttribute="top" secondItem="U6j-8J-teh" secondAttribute="bottom" constant="8" id="xUf-LC-jxB"/>
                         </constraints>
