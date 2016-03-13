@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -19,32 +19,36 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Jq-a6-L4q">
                                 <rect key="frame" x="0.0" y="3" width="51" height="31"/>
-                                <animations/>
                                 <connections>
                                     <action selector="switchBeSwiched:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="HBM-qE-FuN"/>
                                 </connections>
                             </switch>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="4m1-H8-q3u">
                                 <rect key="frame" x="57" y="8" width="20" height="20"/>
-                                <animations/>
                                 <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未配置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-Gh-yHB">
-                                <rect key="frame" x="85" y="9.5" width="42" height="17"/>
-                                <animations/>
+                                <rect key="frame" x="85" y="9" width="42" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删除成功！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-Ij-qLV">
+                                <rect key="frame" x="139" y="9" width="70" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <constraints>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="1Jq-a6-L4q" secondAttribute="bottom" constant="3" id="5hS-yP-OBD"/>
                             <constraint firstItem="1Jq-a6-L4q" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="JPF-cU-eFw"/>
                             <constraint firstItem="7TE-Gh-yHB" firstAttribute="leading" secondItem="4m1-H8-q3u" secondAttribute="trailing" constant="8" id="STl-5G-PLr"/>
+                            <constraint firstItem="Gfp-Ij-qLV" firstAttribute="centerY" secondItem="7TE-Gh-yHB" secondAttribute="centerY" id="VDt-nC-h9v"/>
                             <constraint firstItem="1Jq-a6-L4q" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="3" id="ZcA-di-JwL"/>
                             <constraint firstItem="7TE-Gh-yHB" firstAttribute="centerY" secondItem="4m1-H8-q3u" secondAttribute="centerY" id="bl1-zO-k40"/>
                             <constraint firstItem="4m1-H8-q3u" firstAttribute="centerY" secondItem="1Jq-a6-L4q" secondAttribute="centerY" id="ePG-FN-yGy"/>
+                            <constraint firstItem="Gfp-Ij-qLV" firstAttribute="leading" secondItem="7TE-Gh-yHB" secondAttribute="trailing" constant="12" id="enF-Kf-c3M"/>
                             <constraint firstItem="4m1-H8-q3u" firstAttribute="leading" secondItem="1Jq-a6-L4q" secondAttribute="trailing" constant="8" id="tTy-Fv-XyL"/>
                         </constraints>
                     </view>
@@ -55,6 +59,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
                     <connections>
+                        <outlet property="deletedSuccessLabel" destination="Gfp-Ij-qLV" id="Rgf-Dc-gQ6"/>
                         <outlet property="juhuaView" destination="4m1-H8-q3u" id="jmB-k8-AZ3"/>
                         <outlet property="notConfiguredLabel" destination="7TE-Gh-yHB" id="uMy-C3-ths"/>
                         <outlet property="switch" destination="1Jq-a6-L4q" id="rk1-5g-Ih4"/>

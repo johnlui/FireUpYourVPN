@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +22,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="服务器地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-HW-esK">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -31,7 +30,6 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="MFr-hM-Qzj"/>
@@ -42,7 +40,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b3B-Tc-tiW">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -51,7 +48,6 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="7mA-F0-gjU"/>
@@ -62,7 +58,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6eG-mN-WuM">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -71,7 +66,6 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="8Qj-VR-Ald"/>
@@ -82,7 +76,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="群组名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-6q-WHr">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -91,7 +84,6 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6YR-e0-EKh"/>
@@ -102,7 +94,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密钥（PSK）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-4R-b9S">
                                         <rect key="frame" x="20" y="0.0" width="560" height="44"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -111,7 +102,6 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="T21-Zg-nFK"/>
@@ -119,7 +109,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-dk-ey7">
                                 <rect key="frame" x="40" y="500" width="520" height="80"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="EQt-Yv-cZP"/>
                                 </constraints>
@@ -143,26 +132,36 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支持 CISCO IPSec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFl-xr-Lvi">
-                                <rect key="frame" x="232.5" y="30" width="135.5" height="20.5"/>
-                                <animations/>
+                                <rect key="frame" x="232" y="30" width="135.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-I7-hAr">
+                                <rect key="frame" x="469" y="462" width="91" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <state key="normal" title="删除VPN配置">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonBeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qn-4z-vIJ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rw9-Rz-9fI" secondAttribute="trailing" id="1FQ-jJ-W2S"/>
                             <constraint firstItem="e7n-U0-Vnf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3VO-7t-fPr"/>
                             <constraint firstItem="7nN-dk-ey7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="9Zw-6J-4i0"/>
                             <constraint firstItem="mrh-a3-leC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="A8n-27-of0"/>
+                            <constraint firstItem="rYc-I7-hAr" firstAttribute="trailing" secondItem="7nN-dk-ey7" secondAttribute="trailing" id="FWR-cn-d2Q"/>
                             <constraint firstAttribute="trailing" secondItem="90b-tM-UBr" secondAttribute="trailing" id="FzR-r8-Kh8"/>
                             <constraint firstItem="U6j-8J-teh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HJ5-uu-NJp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nN-dk-ey7" secondAttribute="bottom" constant="20" id="IbM-4Y-Z5j"/>
                             <constraint firstAttribute="trailing" secondItem="U6j-8J-teh" secondAttribute="trailing" id="LKT-2q-eOU"/>
                             <constraint firstAttribute="trailing" secondItem="7nN-dk-ey7" secondAttribute="trailing" constant="40" id="Lsq-Cn-kfD"/>
                             <constraint firstAttribute="trailing" secondItem="mrh-a3-leC" secondAttribute="trailing" id="PHw-Os-wxM"/>
+                            <constraint firstItem="7nN-dk-ey7" firstAttribute="top" secondItem="rYc-I7-hAr" secondAttribute="bottom" constant="8" id="Qcs-3t-gTP"/>
                             <constraint firstItem="mrh-a3-leC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QlG-oN-faG"/>
                             <constraint firstItem="qFl-xr-Lvi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="SdZ-Ui-qpb"/>
                             <constraint firstItem="rw9-Rz-9fI" firstAttribute="top" secondItem="mrh-a3-leC" secondAttribute="bottom" constant="8" id="aAn-9m-b5W"/>
@@ -176,6 +175,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="rYc-I7-hAr" id="78E-AX-uBO"/>
                         <outlet property="mainButton" destination="7nN-dk-ey7" id="iwN-MN-trU"/>
                         <outletCollection property="textFieldArray" destination="xTs-HW-esK" collectionClass="NSMutableArray" id="9SH-ay-dzn"/>
                         <outletCollection property="textFieldArray" destination="b3B-Tc-tiW" collectionClass="NSMutableArray" id="G4d-9X-uwA"/>

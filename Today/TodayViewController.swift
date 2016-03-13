@@ -26,6 +26,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var juhuaView: UIActivityIndicatorView!
     @IBOutlet weak var `switch`: UISwitch!
     @IBOutlet weak var notConfiguredLabel: UILabel!
+    @IBOutlet weak var deletedSuccessLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         self.manager = NEVPNManager.sharedManager()
         self.manager.loadFromPreferencesWithCompletionHandler { (error) -> Void in
+            if Common.sharedUserDefaults?.boolForKey("deleted") == true {
+                self.manager.removeFromPreferencesWithCompletionHandler({ (error) -> Void in
+                    Common.sharedUserDefaults?.removeObjectForKey("deleted")
+                    return self.deletedSuccessLabel.hidden = false
+                })
+            }
             if Common.sharedUserDefaults?.boolForKey("updated") == true {
                 self.manager.removeFromPreferencesWithCompletionHandler { (error) -> Void in
                     self.addPersonalVPNConfig()

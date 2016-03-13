@@ -1,6 +1,8 @@
 在通知中心一键启用 VPN
 ----------
 
+[<img src="https://cloud.githubusercontent.com/assets/219689/5575342/963e0ee8-9013-11e4-8091-7ece67d64729.png" width="135" height="40" alt="AppStore"/>](https://itunes.apple.com/cn/app/yi-jian-vpn-zai-xia-la-tong/id1063286554?l=en&mt=8)
+
 ### 基础要求：
 
 * Xcode 7+ / Swift 2.0+
