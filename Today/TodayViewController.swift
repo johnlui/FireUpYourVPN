@@ -30,24 +30,24 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let configsArray = Common.sharedUserDefaults?.arrayForKey("configsArray") {
+        if let configsArray = Common.sharedUserDefaults?.array(forKey: "configsArray") as? [AnyObject] {
             self.vpnConfig = VPNConfig(server: configsArray[0].description, username: configsArray[1].description, password: configsArray[2].description, groupName: configsArray[3].description, sharedSecret: configsArray[4].description)
         } else {
-            return self.notConfiguredLabel.hidden = false
+            return self.notConfiguredLabel.isHidden = false
         }
         
-        self.manager = NEVPNManager.sharedManager()
-        self.manager.loadFromPreferencesWithCompletionHandler { (error) -> Void in
-            if Common.sharedUserDefaults?.boolForKey("deleted") == true {
-                self.manager.removeFromPreferencesWithCompletionHandler({ (error) -> Void in
-                    Common.sharedUserDefaults?.removeObjectForKey("deleted")
-                    return self.deletedSuccessLabel.hidden = false
+        self.manager = NEVPNManager.shared()
+        self.manager.loadFromPreferences { (error) -> Void in
+            if Common.sharedUserDefaults?.bool(forKey: "deleted") == true {
+                self.manager.removeFromPreferences(completionHandler: { (error) -> Void in
+                    Common.sharedUserDefaults?.removeObject(forKey: "deleted")
+                    return self.deletedSuccessLabel.isHidden = false
                 })
             }
-            if Common.sharedUserDefaults?.boolForKey("updated") == true {
-                self.manager.removeFromPreferencesWithCompletionHandler { (error) -> Void in
+            if Common.sharedUserDefaults?.bool(forKey: "updated") == true {
+                self.manager.removeFromPreferences { (error) -> Void in
                     self.addPersonalVPNConfig()
-                    Common.sharedUserDefaults?.removeObjectForKey("updated")
+                    Common.sharedUserDefaults?.removeObject(forKey: "updated")
                 }
             }
             if self.manager.`protocol` == nil {
@@ -61,16 +61,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.juhuaView.hidden = true
+        self.juhuaView.isHidden = true
         if let _ = self.manager {
-            NSNotificationCenter.defaultCenter().addObserverForName(NEVPNStatusDidChangeNotification, object: self.manager.connection, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
-                if self.manager.connection.status == .Connecting {
-                    self.juhuaView.hidden = false
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.NEVPNStatusDidChange, object: self.manager.connection, queue: OperationQueue.main) { (notification) -> Void in
+                if self.manager.connection.status == .connecting {
+                    self.juhuaView.isHidden = false
                     print("show")
                 } else {
-                    self.juhuaView.hidden = true
+                    self.juhuaView.isHidden = true
                     print("hide")
                 }
                 self.refreshSwitch()
@@ -80,7 +80,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func refreshSwitch() {
-        self.`switch`.setOn(self.manager.connection.status == .Connected, animated: false)
+        self.`switch`.setOn(self.manager.connection.status == .connected, animated: false)
     }
     
     func addPersonalVPNConfig() {
@@ -89,7 +89,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         keychain["sharedSecret"] = self.vpnConfig.sharedSecret
         
         let v2 = NEVPNProtocolIPSec()
-        v2.authenticationMethod = NEVPNIKEAuthenticationMethod.None
+        v2.authenticationMethod = NEVPNIKEAuthenticationMethod.none
         v2.useExtendedAuthentication = true
         v2.serverAddress = self.vpnConfig.server
         
@@ -98,19 +98,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         v2.localIdentifier = self.vpnConfig.groupName
         
         v2.username = self.vpnConfig.username
-        v2.passwordReference = keychain[attributes: "password"]!.persistentRef
+        v2.passwordReference = keychain[attributes: "password"]!.persistentRef as Data?
         
-        v2.authenticationMethod = NEVPNIKEAuthenticationMethod.SharedSecret
-        v2.sharedSecretReference = keychain[attributes: "sharedSecret"]!.persistentRef
+        v2.authenticationMethod = NEVPNIKEAuthenticationMethod.sharedSecret
+        v2.sharedSecretReference = keychain[attributes: "sharedSecret"]!.persistentRef as Data?
         
         self.manager.`protocol` = v2
-        self.manager.enabled = true
-        self.manager.saveToPreferencesWithCompletionHandler({ (error) -> Void in
+        self.manager.isEnabled = true
+        self.manager.saveToPreferences(completionHandler: { (error) -> Void in
             if let _ = error {
                 print("Save Error: ", error)
             }
             do {
-                try NEVPNManager.sharedManager().connection.startVPNTunnel()
+                try NEVPNManager.shared().connection.startVPNTunnel()
             } catch {
                 print("Fire Up Error: ", error)
             }
@@ -118,27 +118,27 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
-        completionHandler(NCUpdateResult.NewData)
+        completionHandler(NCUpdateResult.newData)
     }
-    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+    func widgetMarginInsets(forProposedMarginInsets defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
         var newMargins = defaultMarginInsets
         newMargins.left = 15
         newMargins.right = 15
         newMargins.bottom = 0
         return newMargins
     }
-    @IBAction func switchBeSwiched(sender: AnyObject) {
+    @IBAction func switchBeSwiched(_ sender: AnyObject) {
         if self.manager.`protocol` != nil {
             if let a = sender as? UISwitch {
-                if a.on {
-                    if self.manager.connection.status == .Disconnected {
+                if a.isOn {
+                    if self.manager.connection.status == .disconnected {
                         do {
                             try self.manager.connection.startVPNTunnel()
                         } catch {

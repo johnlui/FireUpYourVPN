@@ -10,11 +10,11 @@ import UIKit
 
 extension UIButton {
     func disable() {
-        self.enabled = false
+        self.isEnabled = false
         self.alpha = 0.5
     }
     func enable() {
-        self.enabled = true
+        self.isEnabled = true
         self.alpha = 1
     }
 }

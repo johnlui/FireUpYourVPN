@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-a3-leC" userLabel="server">
-                                <rect key="frame" x="0.0" y="60" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="服务器地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-HW-esK">
-                                        <rect key="frame" x="20" y="0.0" width="560" height="44"/>
+                                        <frame key="frameInset" minX="20" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -30,16 +31,16 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="MFr-hM-Qzj"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw9-Rz-9fI" userLabel="username">
-                                <rect key="frame" x="0.0" y="112" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b3B-Tc-tiW">
-                                        <rect key="frame" x="20" y="0.0" width="560" height="44"/>
+                                        <frame key="frameInset" minX="20" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -48,16 +49,16 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="7mA-F0-gjU"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-8J-teh" userLabel="password">
-                                <rect key="frame" x="0.0" y="164" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6eG-mN-WuM">
-                                        <rect key="frame" x="20" y="0.0" width="560" height="44"/>
+                                        <frame key="frameInset" minX="20" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -66,16 +67,16 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="8Qj-VR-Ald"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90b-tM-UBr" userLabel="group">
-                                <rect key="frame" x="0.0" y="216" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="群组名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-6q-WHr">
-                                        <rect key="frame" x="20" y="0.0" width="560" height="44"/>
+                                        <frame key="frameInset" minX="20" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -84,16 +85,16 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6YR-e0-EKh"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-U0-Vnf" userLabel="psk">
-                                <rect key="frame" x="0.0" y="268" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密钥（PSK）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-4R-b9S">
-                                        <rect key="frame" x="20" y="0.0" width="560" height="44"/>
+                                        <frame key="frameInset" minX="20" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
@@ -102,19 +103,18 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="T21-Zg-nFK"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-dk-ey7">
-                                <rect key="frame" x="40" y="500" width="520" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="EQt-Yv-cZP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <state key="normal" title="保存 VPN 配置">
-                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -124,7 +124,7 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
-                                        <color key="value" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -132,29 +132,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支持 CISCO IPSec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFl-xr-Lvi">
-                                <rect key="frame" x="232" y="30" width="135.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-I7-hAr">
-                                <rect key="frame" x="469" y="462" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-I7-hAr">
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <state key="normal" title="删除VPN配置">
-                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="deleteButtonBeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qn-4z-vIJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuD-GQ-a8H">
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <state key="normal" title="载入配置文件">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadConfigButtonBeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAK-eQ-DMh"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rw9-Rz-9fI" secondAttribute="trailing" id="1FQ-jJ-W2S"/>
                             <constraint firstItem="e7n-U0-Vnf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3VO-7t-fPr"/>
                             <constraint firstItem="7nN-dk-ey7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="9Zw-6J-4i0"/>
                             <constraint firstItem="mrh-a3-leC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="A8n-27-of0"/>
                             <constraint firstItem="rYc-I7-hAr" firstAttribute="trailing" secondItem="7nN-dk-ey7" secondAttribute="trailing" id="FWR-cn-d2Q"/>
+                            <constraint firstItem="fuD-GQ-a8H" firstAttribute="leading" secondItem="7nN-dk-ey7" secondAttribute="leading" id="Fmq-2k-Ajf"/>
                             <constraint firstAttribute="trailing" secondItem="90b-tM-UBr" secondAttribute="trailing" id="FzR-r8-Kh8"/>
                             <constraint firstItem="U6j-8J-teh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HJ5-uu-NJp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nN-dk-ey7" secondAttribute="bottom" constant="20" id="IbM-4Y-Z5j"/>
@@ -172,6 +180,7 @@
                             <constraint firstItem="qFl-xr-Lvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFf-sQ-Ulz"/>
                             <constraint firstItem="rw9-Rz-9fI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xM9-PG-Mpt"/>
                             <constraint firstItem="90b-tM-UBr" firstAttribute="top" secondItem="U6j-8J-teh" secondAttribute="bottom" constant="8" id="xUf-LC-jxB"/>
+                            <constraint firstItem="7nN-dk-ey7" firstAttribute="top" secondItem="fuD-GQ-a8H" secondAttribute="bottom" constant="8" id="xhh-ku-EEJ"/>
                         </constraints>
                     </view>
                     <connections>

@@ -10,5 +10,5 @@ import Foundation
 
 class Common {
     static let AppGroupsName = "group.com.lvwenhan.vpn"
-    static let sharedUserDefaults = NSUserDefaults(suiteName: Common.AppGroupsName)
+    static let sharedUserDefaults = UserDefaults(suiteName: Common.AppGroupsName)
 }

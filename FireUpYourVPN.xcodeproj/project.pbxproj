@@ -309,6 +309,7 @@
 					C8F43B6A1C04B08A006C62BB = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = B7PY5JUP9A;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -317,15 +318,18 @@
 					};
 					C8F43B7E1C04B08A006C62BB = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = C8F43B6A1C04B08A006C62BB;
 					};
 					C8F43B891C04B08A006C62BB = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = C8F43B6A1C04B08A006C62BB;
 					};
 					C8F43B9F1C04B0A5006C62BB = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = B7PY5JUP9A;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -578,6 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.vpn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -595,6 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.vpn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -607,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireUpYourVPN.app/FireUpYourVPN";
 			};
 			name = Debug;
@@ -619,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireUpYourVPN.app/FireUpYourVPN";
 			};
 			name = Release;
@@ -630,6 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FireUpYourVPN;
 				USES_XCTRUNNER = YES;
 			};
@@ -642,6 +651,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvwenhan.FireUpYourVPNUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FireUpYourVPN;
 				USES_XCTRUNNER = YES;
 			};
@@ -650,6 +660,7 @@
 		C8F43BAF1C04B0A5006C62BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -659,6 +670,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -666,6 +678,7 @@
 		C8F43BB01C04B0A5006C62BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -675,6 +688,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
